@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AR Avatar Example with Text</title>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/2.2.1/aframe/build/aframe-ar.min.js"></script>
+    <link rel="stylesheet" href="./ar-avatar-project/assets/spongebob_gamestation_-_spongebob/scene.gltf">
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <a-scene embedded arjs="trackingMethod: best; sourceType: webcam;">
+      <a-marker preset="barcode" id="8">
+        <a-entity gltf-model="./ar-avatar-project/assets/spongebob_gamestation_-_spongebob/scene.gltf" scale="1 1 1"></a-entity>
+      </a-marker>
+
+      <!-- Camera -->
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>

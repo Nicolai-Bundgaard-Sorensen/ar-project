@@ -4,15 +4,14 @@
     <title>AR Avatar Example with Text</title>
     <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-    <link rel="stylesheet" href="./assets/spongebob_gamestation_-_spongebob/scene.gltf">
   </head>
   <body style="margin: 0; overflow: hidden;">
     <a-scene embedded arjs="sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 4x4_BCH_13_5_5;">
       <a-assets>
         <a-asset-item id="spongebob" src="/assets/spongebob_gamestation_-_spongebob/scene.gltf"></a-asset-item>
       </a-assets>
-      <a-marker type="barcode" id="8">
-        <a-entity gltf-model="#spongebob" scale="1 1 1"></a-entity>
+      <a-marker type="barcode" value="8">
+        <a-entity gltf-model="#spongebob"></a-entity>
       </a-marker>
       <!-- Camera -->
       <a-entity camera></a-entity>
